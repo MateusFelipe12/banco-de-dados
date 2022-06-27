@@ -34,3 +34,13 @@ inner join usuarios as u on (e.id_usuario = u.id)
 inner join emprestimo_livros as el on (e.id = el.id_emprestimo)
 inner join livros as l on (el.id_livro = l.id)
 where u.telefone like ('(49)%')
+
+
+select
+    u.nome,
+    s.nome
+from emprestimos as e
+inner join usuarios as u on (e.id_usuario = u.id)
+inner join emprestimo_livros as el on (e.id = el.id_emprestimo)
+inner join livros as l on (el.id_livro = l.id)
+inner join sessoes as s on (l.id_sessao = s.id)
