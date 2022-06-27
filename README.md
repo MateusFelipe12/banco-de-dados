@@ -1,2 +1,5 @@
 # banco-de-dados
-sql
+
+### Aprendemos selects
+
+### aprendemos joins
